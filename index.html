@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>柯馥菱 Fuling Ko — 影音製作人 × 社群行銷</title>
+<title>柯馥菱 Fuling Ko — 影音內容製作人 × 社群行銷策略師</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   :root{--rose:#E8A0B0;--deep-rose:#C4607A;--blush:#F2D4DC;--cream:#FBF3EE;--dusty-blue:#7BA3B8;--slate:#4A6B7C;--mauve:#8B5E72;--burgundy:#6B2D45;--gold:#C9A96E;--warm-white:#FAF6F0;--charcoal:#2C2420;}
@@ -24,8 +24,6 @@
   .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--deep-rose);transition:width .3s;}
   .nav-links a:hover{color:var(--deep-rose);}
   .nav-links a:hover::after{width:100%;}
-
-  /* HERO */
   .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;position:relative;overflow:hidden;}
   .hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(232,160,176,.07) 59px,rgba(232,160,176,.07) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(232,160,176,.07) 59px,rgba(232,160,176,.07) 60px);pointer-events:none;}
   .hero-left{display:flex;flex-direction:column;justify-content:center;padding:120px 60px 80px 80px;position:relative;animation:fadeUp 1.2s ease both;}
@@ -47,8 +45,6 @@
   .btn-p span{position:relative;z-index:1;}
   .btn-s{padding:13px 34px;border:1px solid var(--dusty-blue);color:var(--slate);font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;font-family:'Cormorant Garamond',serif;transition:all .3s;}
   .btn-s:hover{background:var(--dusty-blue);color:white;}
-
-  /* Hotel illustration */
   .hero-right{position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;animation:fadeIn 1.5s .3s ease both;}
   .hotel-wrap{position:relative;width:380px;height:480px;}
   .ground{position:absolute;bottom:0;left:-40px;right:-40px;height:65px;background:linear-gradient(0deg,rgba(232,212,220,.6),transparent);border-top:1.5px solid rgba(196,96,122,.2);}
@@ -76,20 +72,14 @@
   .scroll-ind{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;animation:fadeUp 1s 1.2s ease both;}
   .scroll-txt{font-size:9px;letter-spacing:.4em;text-transform:uppercase;color:var(--mauve);}
   .scroll-ln{width:1px;height:40px;background:linear-gradient(to bottom,var(--rose),transparent);animation:pulse 2s ease-in-out infinite;}
-
-  /* Divider */
   .dv{display:flex;align-items:center;gap:20px;padding:0 80px;margin:20px 0;}
   .dv-line{flex:1;height:1px;background:linear-gradient(to right,transparent,var(--rose),transparent);}
   .dv-ico{color:var(--deep-rose);font-size:14px;letter-spacing:.3em;}
-
-  /* Section shared */
   .sec-label{font-size:10px;letter-spacing:.5em;text-transform:uppercase;color:var(--deep-rose);margin-bottom:16px;display:flex;align-items:center;gap:12px;}
   .sec-label::before{content:'';display:inline-block;width:24px;height:1px;background:var(--deep-rose);}
   .sec-title{font-family:'Playfair Display',serif;font-size:clamp(28px,3.5vw,44px);font-weight:700;color:var(--burgundy);line-height:1.25;margin-bottom:24px;}
   .sec-title em{font-style:italic;color:var(--deep-rose);}
   .chap{position:absolute;top:40px;right:80px;font-family:'Playfair Display',serif;font-size:11px;letter-spacing:.4em;color:rgba(196,96,122,.28);font-style:italic;}
-
-  /* ABOUT */
   .about{padding:100px 80px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;background:var(--warm-white);position:relative;}
   .about-num{font-family:'Playfair Display',serif;font-size:120px;font-weight:900;color:rgba(232,160,176,.13);line-height:1;position:absolute;left:60px;top:60px;pointer-events:none;user-select:none;}
   .about p{font-size:14px;line-height:2.1;color:#5A5060;margin-bottom:20px;}
@@ -98,8 +88,6 @@
   .stat-n{font-family:'Playfair Display',serif;font-size:46px;font-weight:900;color:var(--burgundy);line-height:1;margin-bottom:8px;}
   .stat-n sup{font-size:18px;}
   .stat-l{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mauve);}
-
-  /* EXPERIENCE */
   .exp{padding:100px 80px;background:var(--cream);position:relative;}
   .timeline{margin-top:60px;position:relative;}
   .timeline::before{content:'';position:absolute;left:180px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,transparent,var(--rose) 5%,var(--rose) 95%,transparent);}
@@ -115,8 +103,6 @@
   .tl-desc{font-size:13px;line-height:1.9;color:#5A5060;margin-bottom:14px;}
   .tl-tags{display:flex;flex-wrap:wrap;gap:7px;}
   .tl-tag{padding:3px 11px;border:1px solid rgba(196,96,122,.3);font-size:10px;letter-spacing:.12em;color:var(--mauve);}
-
-  /* WORKS */
   .works{padding:100px 80px;background:var(--warm-white);position:relative;}
   .works-hd{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;}
   .works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rose);}
@@ -127,7 +113,7 @@
   .wvis svg{position:absolute;inset:0;width:100%;height:100%;}
   .wov{position:absolute;inset:0;background:linear-gradient(to top,rgba(44,36,32,.85),transparent 60%);opacity:0;transition:opacity .4s;}
   .wcard:hover .wov{opacity:1;}
-  .wht{position:absolute;bottom:20px;left:20px;right:20px;color:white;opacity:0;transform:translateY(10px);transition:all .4s .1s;font-size:12px;letter-spacing:.08em;}
+  .wht{position:absolute;bottom:20px;left:20px;right:20px;color:white;opacity:0;transform:translateY(10px);transition:all .4s .1s;font-size:12px;letter-spacing:.08em;line-height:1.7;}
   .wcard:hover .wht{opacity:1;transform:translateY(0);}
   .winfo{padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;border-top:1px solid rgba(232,160,176,.3);}
   .wmeta{flex:1;}
@@ -136,8 +122,6 @@
   .wyr{font-size:11px;color:var(--mauve);font-style:italic;font-family:'Cormorant Garamond',serif;}
   .warr{width:32px;height:32px;border:1px solid var(--rose);display:flex;align-items:center;justify-content:center;color:var(--deep-rose);font-size:14px;transition:all .3s;flex-shrink:0;}
   .wcard:hover .warr{background:var(--deep-rose);border-color:var(--deep-rose);color:white;}
-
-  /* SKILLS */
   .skills{padding:100px 80px;background:var(--burgundy);position:relative;overflow:hidden;}
   .skills::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(232,160,176,.04) 30px,rgba(232,160,176,.04) 31px);}
   .skills .chap{color:rgba(232,160,176,.2);}
@@ -160,8 +144,6 @@
   .acc-ico{font-size:22px;margin-bottom:12px;display:block;}
   .acc-t{font-family:'Playfair Display',serif;font-size:15px;color:var(--blush);margin-bottom:8px;}
   .acc-d{font-size:12px;line-height:1.8;color:rgba(242,212,220,.6);}
-
-  /* CONTACT */
   .contact{padding:100px 80px;background:var(--warm-white);text-align:center;position:relative;}
   .contact .sec-label{justify-content:center;}
   .contact .sec-label::before{display:none;}
@@ -170,19 +152,15 @@
   .ct-links{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;}
   .ct-link{padding:12px 26px;border:1px solid var(--rose);color:var(--burgundy);text-decoration:none;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-family:'Cormorant Garamond',serif;transition:all .3s;}
   .ct-link:hover{background:var(--burgundy);border-color:var(--burgundy);color:var(--cream);}
-
   footer{padding:30px 80px;background:var(--charcoal);display:flex;justify-content:space-between;align-items:center;}
   .ft{font-size:10px;letter-spacing:.18em;color:rgba(242,212,220,.4);}
   .fm{font-family:'Playfair Display',serif;font-size:13px;font-style:italic;color:var(--rose);letter-spacing:.2em;}
-
-  /* Animations */
   @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
   @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
   .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease;}
   .reveal.visible{opacity:1;transform:translateY(0);}
-
   @media(max-width:900px){
     .hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:110px 28px 80px}
     .about{grid-template-columns:1fr;padding:70px 28px}.about-num{display:none}
@@ -197,13 +175,12 @@
 </style>
 </head>
 <body>
-
 <div class="cursor" id="cur"></div>
 <div class="cursor-ring" id="curR"></div>
 <div class="page-frame"></div>
 
 <nav>
-  <div class="nav-logo">E · Ko Portfolio</div>
+  <div class="nav-logo">F · Ko Portfolio</div>
   <ul class="nav-links">
     <li><a href="#about">關於</a></li>
     <li><a href="#exp">經歷</a></li>
@@ -213,31 +190,30 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
     <div class="eyebrow">
       <div class="eyebrow-line"></div>
-      <div class="eyebrow-text">影音製作 × 社群行銷 × 內容創作</div>
+      <div class="eyebrow-text">影音製作 × 社群行銷 × 媒體統籌</div>
     </div>
     <h1 class="hero-title">柯<em>馥菱</em></h1>
     <span class="hero-en">Fuling Ko</span>
     <p class="hero-sub">
-      影音製作人 · 社群行銷策略師 · 內容創作者<br>
-      Media Producer · Content Director · Social Strategist
+      影音內容製作人 · 社群行銷策略師 · 媒體專案統籌<br>
+      Media Producer · Social Content Strategist · Project Director
     </p>
     <p class="hero-desc">
-      跨越影視製作與數位行銷的複合型創作者。<br>
-      從金鐘獎頒獎典禮到 YouTube 頻道全線製作，<br>
-      用鏡頭說故事，以社群建立連結，<br>
-      善用生成式 AI 強化每一個創作決策。
+      橫跨傳統媒體與數位內容的複合型製作人，<br>
+      從電視節目、大型頒獎典禮到 YouTube 頻道全線製播，<br>
+      擅長將品牌故事轉化為有溫度的影音內容，<br>
+      以社群數據為羅盤，以生成式 AI 為加速器。
     </p>
     <div class="tags">
       <span class="tag">影音製作</span>
       <span class="tag">社群行銷</span>
       <span class="tag">節目企劃</span>
       <span class="tag">藝人統籌</span>
-      <span class="tag">AI 協作</span>
+      <span class="tag">生成式 AI</span>
       <span class="tag">數據分析</span>
     </div>
     <div class="cta">
@@ -245,7 +221,6 @@
       <a href="mailto:evelyn.ko1221@gmail.com" class="btn-s">聯絡我</a>
     </div>
   </div>
-
   <div class="hero-right">
     <div class="orn tr"><div class="orn-in">✦</div></div>
     <div class="orn bl"><div class="orn-in">◆</div></div>
@@ -259,7 +234,7 @@
           <div class="win"></div><div class="win"></div><div class="win"></div><div class="win"></div><div class="win"></div>
           <div class="win"></div><div class="win"></div><div class="win"></div><div class="win"></div><div class="win"></div>
         </div>
-        <div class="hotel-sign">Evelyn Ko · Portfolio</div>
+        <div class="hotel-sign">Fuling Ko · Portfolio</div>
         <div class="entrance"></div>
         <div class="turret l"></div>
         <div class="turret r"></div>
@@ -270,7 +245,6 @@
       <div class="tree d"><div class="tree-b"></div><div class="tree-t"></div></div>
     </div>
   </div>
-
   <div class="scroll-ind">
     <span class="scroll-txt">Scroll</span>
     <div class="scroll-ln"></div>
@@ -279,26 +253,25 @@
 
 <div class="dv"><div class="dv-line"></div><div class="dv-ico">✦ &nbsp; ✦ &nbsp; ✦</div><div class="dv-line"></div></div>
 
-<!-- ABOUT -->
 <section class="about" id="about">
+  <span class="chap">CHAPTER I</span>
   <div class="about-num">01</div>
   <div class="reveal">
     <div class="sec-label">About Me</div>
-    <h2 class="sec-title">內容創作者，<br>也是<em>說故事的人</em></h2>
-    <p>擁有豐富媒體經歷的複合型創作者，涉獵領域涵蓋社群影音創作與傳統媒體內容開發，具備藝人統籌、媒體活動專案管理、剪輯包裝、社群操作、行銷策展、內容策劃、製作執行、數據分析與預算管理等多元能力。</p>
-    <p>擅長網路節目、商業影音、社群短影等內容製作，主責參與電視節目、大型活動、頒獎典禮、演唱會與政府標案。善用 Claude、ChatGPT、Runway 等生成式 AI 工具協作，強化內容品質與創作效率。</p>
+    <h2 class="sec-title">媒體製作人，<br>也是<em>跨域整合者</em></h2>
+    <p>擁有逾 15 年媒體實戰經歷的內容製作人，專長橫跨影音製作、社群行銷、節目企劃、藝人統籌與專案財務管理，曾深度參與電視節目、大型頒獎典禮、演唱會、政府標案與網路直播等多元媒體類型。</p>
+    <p>熟悉社群短影音與動靜態圖文的快速產製流程，精通 Premiere Pro、Canva、剪映等工具；同時善用 Claude、ChatGPT、Runway、Gemini 等生成式 AI 協作，強化內容品質與產出效率，並具備 LINE OA、Instagram、YouTube 多平台後台數據分析與策略調整的完整能力。</p>
   </div>
   <div class="stats reveal">
-    <div class="stat"><div class="stat-n">15<sup>+</sup></div><div class="stat-l">年媒體經驗</div></div>
-    <div class="stat"><div class="stat-n">20<sup>+</sup></div><div class="stat-l">商業影音作品</div></div>
+    <div class="stat"><div class="stat-n">15<sup>+</sup></div><div class="stat-l">年媒體實戰經歷</div></div>
+    <div class="stat"><div class="stat-n">30<sup>+</sup></div><div class="stat-l">影音製作專案</div></div>
     <div class="stat"><div class="stat-n">10<sup>+</sup></div><div class="stat-l">大型活動典禮</div></div>
-    <div class="stat"><div class="stat-n">3</div><div class="stat-l">大型媒體品牌</div></div>
+    <div class="stat"><div class="stat-n">3</div><div class="stat-l">大型媒體品牌任職</div></div>
   </div>
 </section>
 
 <div class="dv"><div class="dv-line"></div><div class="dv-ico">✦ &nbsp; ✦ &nbsp; ✦</div><div class="dv-line"></div></div>
 
-<!-- EXPERIENCE -->
 <section class="exp" id="exp">
   <span class="chap">CHAPTER II</span>
   <div class="sec-label reveal">Career Journey</div>
@@ -311,8 +284,8 @@
       <div class="tl-body">
         <div class="tl-co">女人迷（吾思傳媒股份有限公司）</div>
         <div class="tl-role">影音製作人</div>
-        <div class="tl-desc">主責《與軒軒講》及《Womany》兩大 YouTube 頻道全線製作——訪綱撰寫、現場執行、後製剪輯到 YouTube Studio 後台數據解析，獨立完成影音內容一條龍。同時負責 W Class 課程平台、womany shop 商品推廣影音、圖文製作、以及 LINE OA 社群操作。代表作品：蔡英文 8 年關鍵蛻變專訪（高流量）、被妖魔化的醫美真相、國片《莎莉》電影宣傳等。</div>
-        <div class="tl-tags"><span class="tl-tag">影音製作</span><span class="tl-tag">YT 頻道全線</span><span class="tl-tag">社群行銷</span><span class="tl-tag">數據分析</span><span class="tl-tag">AI 協作</span></div>
+        <div class="tl-desc">現任女人迷影音／內容製作人，主責《與軒軒講》及《Womany》兩大 YouTube 頻道全線製作，從通告統籌、訪綱撰寫、現場執行、後製剪輯，到影片上線後的社群行銷與 YouTube Studio 後台數據解析，獨立完成影音內容一條龍。同時負責 W Class 課程平台、womany shop 自有商品推廣影音、圖文製作、LINE OA 社群操作與網店主題策展。代表作品：蔡英文 8 年關鍵蛻變專訪、被妖魔化的醫美真相、國片《莎莉》電影宣傳等。</div>
+        <div class="tl-tags"><span class="tl-tag">YT 頻道全線製作</span><span class="tl-tag">社群行銷</span><span class="tl-tag">數據分析</span><span class="tl-tag">電商策展</span><span class="tl-tag">AI 內容協作</span></div>
       </div>
     </div>
 
@@ -322,7 +295,7 @@
       <div class="tl-body">
         <div class="tl-co">進擊媒體行銷有限公司</div>
         <div class="tl-role">創意總監 / 專案企劃・藝人統籌・財務管理</div>
-        <div class="tl-desc">以創意總監身份統籌製作公益記錄片 2 系列、電視／網路節目 6 檔、直播活動 3 個、商業創作影片逾 20 支。2015 年領先業界製播全國首創《密逃者們》——結合密室逃脫、募資任務、實境直播的創新節目形式。亦主導《一起上學吧》YT 頻道品牌社群、鐵粉私密社群與官方商城體系建立。</div>
+        <div class="tl-desc">時任創意總監，統籌製作公益紀錄片 2 系列、電視／網路節目 6 檔、直播活動 3 個、商業創作影片逾 20 支。2015 年領先業界，與 LIVEHouse.in、PressPlay 合作製播全國首創《密逃者們》——結合真人密室逃脫、群眾募資任務與實境直播的創新節目形式。並主導《一起上學吧》YT 頻道品牌社群、鐵粉私密社群（LINE 社群）與官方商城體系的完整建立，累積深厚的粉絲經濟運營與數據驅動策略能力。</div>
         <div class="tl-tags"><span class="tl-tag">節目製作人</span><span class="tl-tag">直播導播</span><span class="tl-tag">政府標案</span><span class="tl-tag">群眾募資</span><span class="tl-tag">財務管理</span></div>
       </div>
     </div>
@@ -333,8 +306,8 @@
       <div class="tl-body">
         <div class="tl-co">金星娛樂有限公司</div>
         <div class="tl-role">執行製作・企劃・藝人統籌</div>
-        <div class="tl-desc">主責典禮、活動、晚會 10 個、電視節目 12 個。以總執行製作身份主導文化部第 48 屆《電視金鐘獎》《廣播金鐘獎》頒獎典禮，統籌所有藝人通告與表演內容。連續 4 屆執行《義大世界跨年 LIVE 晚會》，以及《相信希望》311 賑災晚會（全台 20+ 頻道聯播，善款逾 8 億 9 千萬）。</div>
-        <div class="tl-tags"><span class="tl-tag">金鐘獎製作</span><span class="tl-tag">藝人統籌</span><span class="tl-tag">大型晚會</span><span class="tl-tag">腳本撰寫</span><span class="tl-tag">活動策畫</span></div>
+        <div class="tl-desc">時任執行製作，主責典禮、活動、晚會 10 個、電視節目 12 個。以總執行製作身份主導文化部第 48 屆《電視金鐘獎》《廣播金鐘獎》兩大國家級頒獎典禮，統籌百餘組藝人通告與全場表演內容規劃執行。連續 4 屆擔任《義大世界跨年 LIVE 晚會》藝人統籌，並執行《相信希望》311 賑災晚會（全台 20+ 頻道聯播，單日募款逾 8 億 9 千萬元）。</div>
+        <div class="tl-tags"><span class="tl-tag">金鐘獎執行製作</span><span class="tl-tag">藝人統籌</span><span class="tl-tag">大型晚會</span><span class="tl-tag">腳本撰寫</span><span class="tl-tag">媒體公關</span></div>
       </div>
     </div>
 
@@ -343,7 +316,6 @@
 
 <div class="dv"><div class="dv-line"></div><div class="dv-ico">✦ &nbsp; ✦ &nbsp; ✦</div><div class="dv-line"></div></div>
 
-<!-- WORKS -->
 <section class="works" id="works">
   <span class="chap">CHAPTER III</span>
   <div class="works-hd reveal">
@@ -355,7 +327,7 @@
       <div class="wvis" style="background:linear-gradient(135deg,#E8A0B0,#C4607A 45%,#7BA3B8);">
         <svg viewBox="0 0 600 300"><rect width="600" height="300" fill="rgba(0,0,0,.05)"/><rect x="40" y="40" width="520" height="220" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="1"/><line x1="300" y1="0" x2="300" y2="300" stroke="rgba(255,255,255,.07)" stroke-width="1"/><circle cx="300" cy="150" r="70" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="1"/><circle cx="300" cy="150" r="45" fill="rgba(255,255,255,.04)" stroke="rgba(255,255,255,.14)" stroke-width="1"/><text x="300" y="145" font-family="'Playfair Display',serif" font-size="13" fill="rgba(255,255,255,.7)" text-anchor="middle" font-style="italic">YouTube</text><text x="300" y="163" font-family="'Playfair Display',serif" font-size="13" fill="rgba(255,255,255,.7)" text-anchor="middle" font-style="italic">與軒軒講</text></svg>
         <div class="wov"></div>
-        <div class="wht">蔡英文專訪・醫美真相・國片莎莉…　影音製作全流程 — 從訪綱到上線一手包辦</div>
+        <div class="wht">蔡英文專訪・醫美真相・國片莎莉…<br>從訪綱撰寫到數據分析，影音內容全線一手包辦</div>
       </div>
       <div class="winfo">
         <div class="wmeta"><div class="wcat">YouTube 頻道製作 · 女人迷</div><div class="wtitle">《與軒軒講》影音製作人</div><div class="wyr">2024 — Present</div></div>
@@ -364,20 +336,34 @@
     </div>
 
     <div class="wcard">
-      <div class="wvis" style="background:linear-gradient(160deg,#8B5E72,#6B2D45);">
-        <svg viewBox="0 0 280 280"><rect width="280" height="280" fill="rgba(0,0,0,.05)"/><rect x="25" y="25" width="230" height="230" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><rect x="50" y="50" width="180" height="180" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1"/><text x="140" y="148" font-family="'Playfair Display',serif" font-size="13" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">金鐘獎</text></svg>
-        <div class="wov"></div><div class="wht">文化部第 48 屆電視暨廣播金鐘獎　總執行製作・藝人統籌</div>
+      <div class="wvis" style="background:linear-gradient(160deg,#C9A96E,#8B5E72);">
+        <svg viewBox="0 0 280 280"><rect width="280" height="280" fill="rgba(0,0,0,.05)"/><rect x="25" y="25" width="230" height="230" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><rect x="50" y="50" width="180" height="180" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1"/><line x1="25" y1="25" x2="255" y2="255" stroke="rgba(255,255,255,.06)" stroke-width="1"/><text x="140" y="148" font-family="'Playfair Display',serif" font-size="12" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">Womany Shop</text></svg>
+        <div class="wov"></div>
+        <div class="wht">牌卡・課程・手帳本…<br>量身訂做品牌推廣影音與圖文，涵蓋 IG、YT、LINE OA</div>
       </div>
       <div class="winfo">
-        <div class="wmeta"><div class="wcat">大型典禮 · 文化部</div><div class="wtitle">第48屆電視廣播金鐘獎</div><div class="wyr">2013</div></div>
+        <div class="wmeta"><div class="wcat">電商社群影音 · 女人迷</div><div class="wtitle">W Class × Womany Shop 社群推廣系列</div><div class="wyr">2024 — 2025</div></div>
+        <div class="warr">→</div>
+      </div>
+    </div>
+
+    <div class="wcard">
+      <div class="wvis" style="background:linear-gradient(160deg,#8B5E72,#6B2D45);">
+        <svg viewBox="0 0 280 200"><rect width="280" height="200" fill="rgba(0,0,0,.05)"/><rect x="20" y="20" width="240" height="160" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><rect x="45" y="45" width="190" height="110" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1"/><text x="140" y="108" font-family="'Playfair Display',serif" font-size="12" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">金鐘獎</text></svg>
+        <div class="wov"></div>
+        <div class="wht">國家級頒獎典禮<br>總執行製作・百餘組藝人統籌・全場表演內容規劃</div>
+      </div>
+      <div class="winfo">
+        <div class="wmeta"><div class="wcat">大型典禮 · 文化部</div><div class="wtitle">第48屆電視暨廣播金鐘獎</div><div class="wyr">2013</div></div>
         <div class="warr">→</div>
       </div>
     </div>
 
     <div class="wcard">
       <div class="wvis" style="background:linear-gradient(135deg,#7BA3B8,#4A6B7C);">
-        <svg viewBox="0 0 280 200"><rect width="280" height="200" fill="rgba(0,0,0,.05)"/><rect x="20" y="20" width="240" height="160" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><circle cx="140" cy="100" r="55" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="1"/><text x="140" y="108" font-family="'Playfair Display',serif" font-size="13" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">密逃者們</text></svg>
-        <div class="wov"></div><div class="wht">全國首創　密室逃脫 × 募資任務 × 實境直播節目</div>
+        <svg viewBox="0 0 280 200"><rect width="280" height="200" fill="rgba(0,0,0,.05)"/><rect x="20" y="20" width="240" height="160" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><circle cx="140" cy="100" r="55" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="1"/><circle cx="140" cy="100" r="30" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="1"/><text x="140" y="108" font-family="'Playfair Display',serif" font-size="12" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">密逃者們</text></svg>
+        <div class="wov"></div>
+        <div class="wht">全國首創<br>密室逃脫 × 募資任務 × 實境直播，開創台灣網路節目新形式</div>
       </div>
       <div class="winfo">
         <div class="wmeta"><div class="wcat">網路直播節目 · 經濟部SIIR</div><div class="wtitle">《密逃者們》節目製作人</div><div class="wyr">2015</div></div>
@@ -386,20 +372,10 @@
     </div>
 
     <div class="wcard">
-      <div class="wvis" style="background:linear-gradient(160deg,#C9A96E,#8B5E72);">
-        <svg viewBox="0 0 280 200"><rect width="280" height="200" fill="rgba(0,0,0,.05)"/><rect x="20" y="20" width="240" height="160" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><line x1="20" y1="20" x2="260" y2="180" stroke="rgba(255,255,255,.07)" stroke-width="1"/><line x1="260" y1="20" x2="20" y2="180" stroke="rgba(255,255,255,.07)" stroke-width="1"/><text x="140" y="108" font-family="'Playfair Display',serif" font-size="11" fill="rgba(255,255,255,.6)" text-anchor="middle" font-style="italic">Womany Shop</text></svg>
-        <div class="wov"></div><div class="wht">W Class 課程平台 × womany shop 商品推廣影音・圖文・LINE OA 系列</div>
-      </div>
-      <div class="winfo">
-        <div class="wmeta"><div class="wcat">電商社群影音 · 女人迷</div><div class="wtitle">W Class × Womany Shop 系列</div><div class="wyr">2024 — 2025</div></div>
-        <div class="warr">→</div>
-      </div>
-    </div>
-
-    <div class="wcard">
       <div class="wvis" style="background:linear-gradient(135deg,#E8A0B0,#C9A96E);">
         <svg viewBox="0 0 280 200"><rect width="280" height="200" fill="rgba(0,0,0,.05)"/><rect x="20" y="20" width="240" height="160" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1"/><circle cx="80" cy="100" r="35" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1"/><circle cx="200" cy="100" r="35" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="1"/><line x1="115" y1="100" x2="165" y2="100" stroke="rgba(255,255,255,.2)" stroke-width="1"/><text x="140" y="170" font-family="'Playfair Display',serif" font-size="11" fill="rgba(255,255,255,.5)" text-anchor="middle" font-style="italic">跨年晚會</text></svg>
-        <div class="wov"></div><div class="wht">連續 4 屆義大世界跨年 LIVE 晚會　藝人統籌・活動策畫</div>
+        <div class="wov"></div>
+        <div class="wht">連續 4 屆義大世界跨年 LIVE 晚會<br>藝人統籌・活動策畫・現場執行全權負責</div>
       </div>
       <div class="winfo">
         <div class="wmeta"><div class="wcat">大型晚會 · 義大世界</div><div class="wtitle">《義大世界跨年LIVE晚會》</div><div class="wyr">2011 — 2014</div></div>
@@ -412,7 +388,6 @@
 
 <div class="dv"><div class="dv-line"></div><div class="dv-ico">✦ &nbsp; ✦ &nbsp; ✦</div><div class="dv-line"></div></div>
 
-<!-- SKILLS -->
 <section class="skills" id="skills">
   <span class="chap">CHAPTER IV</span>
   <div class="sec-label reveal">Expertise</div>
@@ -427,29 +402,28 @@
         <div class="sk-item"><div class="sk-row"><span class="sk-name">直播導播（Black Magic）</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="85"></div></div></div>
       </div>
       <div class="sk-cat">
-        <div class="sk-cat-t">社群行銷 & 數據</div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">IG / YouTube / LINE OA</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
+        <div class="sk-cat-t">社群行銷 &amp; 數據</div>
+        <div class="sk-item"><div class="sk-row"><span class="sk-name">IG / YouTube / LINE OA 經營</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="95"></div></div></div>
         <div class="sk-item"><div class="sk-row"><span class="sk-name">社群短影音 / Canva / 剪映</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="93"></div></div></div>
-        <div class="sk-item"><div class="sk-row"><span class="sk-name">數據分析 / YouTube Studio</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
+        <div class="sk-item"><div class="sk-row"><span class="sk-name">後台數據分析 / YouTube Studio</span><span class="sk-pct">精通</span></div><div class="sk-bar"><div class="sk-fill" data-w="88"></div></div></div>
         <div class="sk-item"><div class="sk-row"><span class="sk-name">電商平台 Super 8 / Shopline</span><span class="sk-pct">中階</span></div><div class="sk-bar"><div class="sk-fill" data-w="74"></div></div></div>
       </div>
     </div>
     <div class="acc-grid reveal">
-      <div class="acc"><span class="acc-ico">🎬</span><div class="acc-t">影視製作全流程</div><div class="acc-d">從電視節目、大型典禮、演唱會到網路直播，主導文化部金鐘獎頒獎典禮的完整製作與藝人統籌。</div></div>
-      <div class="acc"><span class="acc-ico">📱</span><div class="acc-t">多平台社群經營</div><div class="acc-d">熟悉 Instagram、YouTube、LINE OA 三大平台，具備演算法策略、數據判讀與高觸及率內容產製能力。</div></div>
-      <div class="acc"><span class="acc-ico">🤖</span><div class="acc-t">生成式 AI 協作</div><div class="acc-d">善用 Claude、ChatGPT、Gemini、Runway 等 AI 工具於內容構思、腳本撰寫與數據歸納，加速產出效率。</div></div>
-      <div class="acc"><span class="acc-ico">🏆</span><div class="acc-t">專案統籌 & 財務</div><div class="acc-d">精通媒體專案的預算編列、財務控管與核銷行政，具備政府標案及大型商案的完整財務管理經驗。</div></div>
+      <div class="acc"><span class="acc-ico">🎬</span><div class="acc-t">影視製作全流程</div><div class="acc-d">從電視節目、大型典禮、演唱會到網路直播，具備完整製作流程實戰能力，曾主導國家級金鐘獎頒獎典禮製作。</div></div>
+      <div class="acc"><span class="acc-ico">📱</span><div class="acc-t">多平台社群策略</div><div class="acc-d">熟悉 Instagram、YouTube、LINE OA 三大平台內容策略，具備演算法判讀、數據分析與高觸及率內容產製能力。</div></div>
+      <div class="acc"><span class="acc-ico">🤖</span><div class="acc-t">生成式 AI 協作</div><div class="acc-d">善用 Claude、ChatGPT、Gemini、Runway 等 AI 工具進行內容構思、腳本撰寫與數據歸納，加速產出並提升內容品質。</div></div>
+      <div class="acc"><span class="acc-ico">🏆</span><div class="acc-t">專案統籌 &amp; 財務</div><div class="acc-d">精通媒體專案預算編列、財務控管與政府標案核銷，具備大型商案從策劃到結案的完整執行能力。</div></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="contact" id="contact">
   <span class="chap">CHAPTER V</span>
   <div style="max-width:560px;margin:0 auto;">
     <div class="sec-label reveal">Get in Touch</div>
     <h2 class="sec-title reveal">讓我們一起<em>創作</em></h2>
-    <p class="ct-tag reveal">「最好的故事，都在下一個合作裡。」<br>無論是影音製作、社群企劃、節目策劃，<br>或是 AI 內容整合應用，歡迎與我聊聊。</p>
+    <p class="ct-tag reveal">「最好的故事，都在下一個合作裡。」<br>無論是影音製作、社群策略、節目企劃，<br>或是 AI 內容整合應用，歡迎隨時與我聊聊，<br>一起創造更多可能性！</p>
     <div class="ct-links reveal">
       <a href="mailto:evelyn.ko1221@gmail.com" class="ct-link">✉ &nbsp;Email</a>
       <a href="tel:+886919904103" class="ct-link">☎ &nbsp;+886 919-904-103</a>
@@ -459,13 +433,12 @@
 </section>
 
 <footer>
-  <span class="ft">© 2025 柯馥菱 Evelyn Ko · All Rights Reserved</span>
+  <span class="ft">© 2025 柯馥菱 Fuling Ko · All Rights Reserved</span>
   <span class="fm">Grand Portfolio ✦</span>
   <span class="ft">Designed with Cinema in Mind</span>
 </footer>
 
 <script>
-  // Cursor
   const cur=document.getElementById('cur'),curR=document.getElementById('curR');
   document.addEventListener('mousemove',e=>{
     cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
@@ -475,20 +448,13 @@
     el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2)';curR.style.transform='translate(-50%,-50%) scale(1.5)';});
     el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';curR.style.transform='translate(-50%,-50%) scale(1)';});
   });
-
-  // Reveal
   const obs=new IntersectionObserver((entries)=>{
     entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*90);obs.unobserve(e.target);}});
   },{threshold:0.1});
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-  // Skill bars
   const skObs=new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
-      if(e.isIntersecting){
-        e.target.style.width=e.target.dataset.w+'%';
-        skObs.unobserve(e.target);
-      }
+      if(e.isIntersecting){e.target.style.width=e.target.dataset.w+'%';skObs.unobserve(e.target);}
     });
   },{threshold:0.4});
   document.querySelectorAll('.sk-fill').forEach(b=>skObs.observe(b));
